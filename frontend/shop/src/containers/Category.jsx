@@ -1,10 +1,12 @@
 import React from 'react';
+import Container from '../components/Container'
+import Headline from '../components/Headline.jsx'
 
 const CategoryContainer = () => {
   return (
-    <div>
-      Category
-    </div>
+    <Container>
+      <Headline breadcrumbs={[{ title: 'Главная', slug: '/' }, { title: 'Стройматериалы', slug: '/category' }, { title: 'Строительные смеси', slug: '/category' }]}>Цемент</Headline>
+    </Container>
   )
 }
 

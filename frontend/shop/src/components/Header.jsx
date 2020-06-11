@@ -5,6 +5,7 @@ import Container from '../components/Container'
 
 const Root = styled.header`
   display: block;
+  background-color: #ccc;
 `
 
 const Header = () => (

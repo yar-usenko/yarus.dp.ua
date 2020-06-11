@@ -4,6 +4,7 @@ import Container from '../components/Container'
 
 const Root = styled.footer`
   display: block;
+  background-color: #ccc;
 `
 
 const Footer = () => (
