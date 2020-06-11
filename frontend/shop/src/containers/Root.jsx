@@ -17,7 +17,7 @@ const RootContainer = () => {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route exact path="/catalog">
+        <Route exact path="/category">
           <Category />
         </Route>
         <Route exact path="/product">
