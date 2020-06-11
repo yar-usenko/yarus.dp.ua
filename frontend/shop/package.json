@@ -1,6 +1,10 @@
 {
   "name": "@frontend/shop",
   "private": true,
+  "scripts": {
+    "develop": "webpack-dev-server --mode development",
+    "build": "webpack --mode production"
+  },
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
@@ -24,9 +28,11 @@
     "@babel/preset-react": "^7.9.4",
     "@rollup/plugin-run": "^2.0.2",
     "babel-loader": "^8.1.0",
+    "babel-plugin-styled-components": "^1.10.7",
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.3.0",
     "react-router-dom": "^5.2.0",
+    "styled-components": "^5.1.1",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.11.0"

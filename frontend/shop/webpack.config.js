@@ -28,14 +28,14 @@ module.exports = {
   },
   plugins: [
     new HtmlWebPackPlugin({
-      title: 'Панель управления',
+      title: 'Интернет-магазин',
       meta: {
         viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no'
       }
     })
   ],
   devServer: {
-    port: 8080,
+    port: 8000,
     contentBase: './public',
     historyApiFallback: true,
     http2: true,
