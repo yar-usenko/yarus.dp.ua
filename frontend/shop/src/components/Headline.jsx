@@ -17,10 +17,10 @@ const Title = styled(HeadingBase)`
   margin-bottom: 0;
 `
 
-const Headline = ({ children, breadcrumbs, ...props }) => (
+const Headline = ({ children, breadcrumbs, level = 1, ...props }) => (
   <Root {...props}>
     <Breadcrumbs items={breadcrumbs} />
-    <Title>{children}</Title>
+    <Title level={level}>{children}</Title>
   </Root>
 )
 

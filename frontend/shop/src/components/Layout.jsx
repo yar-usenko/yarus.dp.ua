@@ -40,14 +40,19 @@ const GlobalStyle = createGlobalStyle`
     height: 100%;
     min-height: 100%;
   }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: baseline;
+  }
 `
 
 const Root = styled.div`
   display: flex;
+  width: 100%;
   min-height: 100vh;
   flex-direction: column;
-  width: 100%;
-  height: 100%;
 `
 
 const Main = styled.div`

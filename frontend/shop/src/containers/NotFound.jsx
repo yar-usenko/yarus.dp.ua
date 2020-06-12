@@ -29,7 +29,7 @@ const NotFoundContainer = () => {
     <Center>
       <Container>
         <Wrapper>
-          <Title>Страница не&nbsp;найдена</Title>
+          <Title level="1">Страница не&nbsp;найдена</Title>
           <Paragraph>Скорее всего эта страница никогда не&nbsp;существовала, либо стала ненужной и&nbsp;мы&nbsp;её&nbsp;грохнули.</Paragraph>
           <Paragraph>Так бывает, не&nbsp;расстраивайтесь. <Link to="/">На&nbsp;главной</Link> есть ещё страницы, не&nbsp;хуже этой.</Paragraph>
         </Wrapper>
