@@ -37,7 +37,7 @@ const ProductCard = ({ children, ...props }) => (
   <Root {...props}>
     <Thumb alt="Цемент CRH ПЦI-500 25 кг" src="https://cdn.27.ua/799/c4/a0/115872_2.jpeg" />
     <Title to="/product">Цемент CRH ПЦI-500 25 кг</Title>
-    <Price value="79.00" />
+    <Price value={1234567890} />
   </Root>
 )
 

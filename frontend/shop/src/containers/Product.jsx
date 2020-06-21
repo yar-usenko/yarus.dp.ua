@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components'
 import Container from '../components/Container'
 import Headline from '../components/Headline.jsx'
 import Heading from '../components/Heading.jsx'
@@ -8,30 +9,47 @@ import List from '../components/List.jsx'
 import Section from '../components/Section.jsx'
 import Grid from '../components/Grid.jsx'
 import Spec from '../components/Spec.jsx'
+import ProductCarousel from '../components/ProductCarousel';
+import Thumb from '../components/Thumb.jsx'
+import CurrencyLabel from '../components/CurrencyLabel.jsx'
+
+const Sticky = styled.div`
+  position: sticky;
+  top: 1.5rem;
+  margin-top: 1.5rem;
+`
 
 const ProductContainer = () => {
   return (
     <Container>
-      <Headline
-        breadcrumbs={[{
-          title: 'Главная',
-          slug: '/'
-        }, {
-          title: 'Стройматериалы',
-          slug: '/category'
-        }, {
-          title: 'Строительные смеси',
-          slug: '/category'
-        }, {
-          title: 'Цемент',
-          slug: '/category'
-        }]}
-      >
-        Цемент CRH ПЦI-500 25 кг
-      </Headline>
-      <img src="https://cdn.27.ua/799/c4/a0/115872_2.jpeg" alt=""/>
+      <Grid>
+        <Grid.Cell column="6">
+          <Thumb alt="Цемент CRH ПЦI-500 25 кг" src="https://cdn.27.ua/799/c4/a0/115872_2.jpeg" />
+        </Grid.Cell>
+        <Grid.Cell column="6">
+          <Headline
+            level="2"
+            breadcrumbs={[{
+              title: 'Главная',
+              slug: '/'
+            }, {
+              title: 'Стройматериалы',
+              slug: '/category'
+            }, {
+              title: 'Строительные смеси',
+              slug: '/category'
+            }, {
+              title: 'Цемент',
+              slug: '/category'
+            }]}
+          >
+            Электровелосипед OIO CITY BIKE Elite White
+          </Headline>
+          <CurrencyLabel value="79.00" />
+        </Grid.Cell>
+      </Grid>
       <Section title="Также вас могут заинтересовать">
-        Также вас могут заинтересовать
+        <ProductCarousel />
       </Section>
       <Grid>
         <Grid.Cell column="8">
@@ -110,11 +128,14 @@ const ProductContainer = () => {
           </Section>
         </Grid.Cell>
         <Grid.Cell column="4">
-          sdf
+          <Sticky>
+            <Thumb alt="Цемент CRH ПЦI-500 25 кг" src="https://cdn.27.ua/799/c4/a0/115872_2.jpeg" />
+            <Heading level="5">Цемент CRH ПЦI-500 25 кг</Heading>
+          </Sticky>
         </Grid.Cell>
       </Grid>
       <Section title="Вы просматривали">
-        ыва
+        <ProductCarousel />
       </Section>
     </Container>
   )

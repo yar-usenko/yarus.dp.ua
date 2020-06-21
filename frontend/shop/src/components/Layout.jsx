@@ -1,6 +1,7 @@
 import React from 'react'
 import styled,  { createGlobalStyle }  from 'styled-components'
 import Header from '../components/Header.jsx'
+import MainMenu from '../components/MainMenu.jsx'
 import Footer from '../components/Footer.jsx'
 
 const GlobalStyle = createGlobalStyle`
@@ -19,7 +20,7 @@ const GlobalStyle = createGlobalStyle`
 
   :root {
     font-family: system-ui, sans-serif;
-    font-size: 100%;
+    font-size: 16px;
     line-height: 1.5;
 
     width: 100%;
@@ -33,6 +34,8 @@ const GlobalStyle = createGlobalStyle`
     width: 100%;
     height: 100%;
     min-height: 100%;
+
+    overflow-y: scroll;
   }
 
   #∇ {
@@ -65,6 +68,7 @@ const Layout = ({ children }) => (
   <Root>
     <GlobalStyle />
     <Header />
+    <MainMenu />
     <Main>{children}</Main>
     <Footer />
   </Root>

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Root = styled.span`
   position: relative;
-  display: inline-block;
+  display: block;
   max-width: 100%;
   height: auto;
   padding-bottom: 100%;

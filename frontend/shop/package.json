@@ -29,10 +29,12 @@
     "@rollup/plugin-run": "^2.0.2",
     "babel-loader": "^8.1.0",
     "babel-plugin-styled-components": "^1.10.7",
+    "file-loader": "^6.0.0",
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.3.0",
     "react-router-dom": "^5.2.0",
     "styled-components": "^5.1.1",
+    "url-loader": "^4.1.0",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.11.0"
@@ -40,6 +42,7 @@
   "dependencies": {
     "@apollo/react-hooks": "^3.1.5",
     "@babel/runtime-corejs3": "^7.9.6",
+    "@brainhubeu/react-carousel": "^1.18.9",
     "apollo-boost": "^0.4.9",
     "core-js": "3",
     "graphql": "^15.0.0",
